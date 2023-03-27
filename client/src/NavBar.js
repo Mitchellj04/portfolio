@@ -1,27 +1,43 @@
-import { AppBar, IconButton, Toolbar, Typography } from '@mui/material'
+import { AppBar, Avatar, Box, IconButton, Toolbar, Typography } from '@mui/material'
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import HomeIcon from '@mui/icons-material/Home';
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
+import { textAlign } from '@mui/system';
+
 
 const NavBar = () => {
+    const navigate = useNavigate()
 
     const appBarStyle = {
-        backgroundColor: "#e7d07d"
+        backgroundColor: "#515151",
+        textAlign: 'center',
+        
     }
     return (
-        <>
+        <Box>
             <AppBar style={appBarStyle}>
-                <Toolbar>
-                    <Typography variant='h4'>Justin's Portfolio</Typography>
+                <Toolbar >
+                    <IconButton
+                        size="large"
+                        aria-label="home button"
+                        aria-controls="menu-appbar"
+                        aria-haspopup="true"
+                        style={{ align: "left" }}
+                        color="inherit"
+                        onClick={() => navigate('/home')}><HomeIcon /></IconButton>
+                    <Typography variant='h4' component="div" style={{textAlign: 'center'}}>Justin's Portfolio</Typography>
                     <IconButton
                         size="large"
                         aria-label="account of current user"
                         aria-controls="menu-appbar"
                         aria-haspopup="true"
                         style={{ align: "right" }}
-                        color="inherit"><AccountCircleIcon /></IconButton>
+                        color="inherit"
+                        onClick={() => navigate('/profile')}><Avatar src={'/profilepic.jpg'}/></IconButton>
                 </Toolbar>
             </AppBar>
-        </>
+        </Box>
     )
 }
 
