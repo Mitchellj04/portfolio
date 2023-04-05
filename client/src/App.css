@@ -2,7 +2,23 @@
 }
 
 body{
-  background-color: #D0E9E8;
+  background-color: #05284a;
+ 
+}
+
+.landing{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  background-image: url('./Images/landingbackground.jpg');
+}
+
+.card{
+  background-color: #919191;
+  color: whitesmoke;
 }
 
 /* .App-logo {

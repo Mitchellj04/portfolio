@@ -6,7 +6,6 @@ import ProjectMain from './Projects/ProjectMain'
 const Home = () => {
   return (<>
     <div style={{marginTop: 100}}>
-      <Typography>Hi I'm Justin Mitchell, Welcome to my Website!</Typography>  
       <ProjectMain />
        </div>
         </>

@@ -1,24 +1,30 @@
-import { Card, CardContent, CardHeader, CardMedia, Grid, Typography } from '@mui/material'
+import { Card, CardActionArea, CardContent, CardHeader, CardMedia, Grid, Typography } from '@mui/material'
 import React, { useState } from 'react'
-import adventureblog from '../Images/adventureblog.png'
-import freelancer from '../Images/freelancer.png'
+import crypto from '../Images/cryptonite.png'
 import skibuddy from '../Images/skibuddy.png'
 import watercooler from '../Images/watercooler.png'
 
-
 const ProjectList = ({project}) => {
 
+  const cardStyle ={
+    backgroundColor: 'inherit',
+    color: 'whitesmoke'
+  }
+
+
   return (
- 
-      <Grid item xs={5} style={{margin: 10}}>
-        <Card>
-          <CardHeader title={project.title}/>
+
+      <Grid item xs={5} style={{margin: 20}}>
+        <CardActionArea href={project.url} target="_blank" rel='noopener noreferrer'>
+        <Card style={cardStyle}>
+          <CardHeader title={project.title} style={{textAlign: 'center'}}/>
           <CardMedia component="img" image={project.image}/>
           <CardContent>
             <Typography>{project.description}</Typography>
             <Typography></Typography>
           </CardContent>
         </Card>
+        </CardActionArea>
       </Grid>
     
 

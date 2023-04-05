@@ -1,24 +1,29 @@
-import React from 'react'
-import { Button, Paper, Typography } from '@mui/material'
+import React, { useState } from 'react'
+import { Avatar, Button, Paper, Typography } from '@mui/material'
 import { useNavigate } from 'react-router-dom'
 import { Box } from '@mui/system'
+import landingBackground from './Images/landingbackground.jpg'
 
 const LandingPage = ({setLoading}) => {
     const navigate = useNavigate()
+    const [isLoading, setIsLoading] = useState(false)
 
     const handleLoading = (e) => {
-     if(e.target.isClick === true){
-      console.log('true')
-     }
-     else{ console.log(e)}
+     setLoading(false)
+     navigate('/home')
     }
 
+    console.log(isLoading)
+
+
   return (<>
-    <div style={{marginTop: 100}}>
-    <Box>
-      <Paper>
-    <Typography>Welcome to my portfolio!</Typography>
-    <Button onClick={() => setLoading(false)}>Continue</Button></Paper></Box>
+    <div className='landing'>
+    <Box style={{margin: 100}}> 
+    <Avatar sx={{ height: '200px', width: '200px', textAlign: 'center'}} src={'/portfoliophoto.jpg'} />
+    <Typography variant='h2' style={{color: 'whitesmoke'}}>Hello!</Typography>
+    <Typography variant='h4' style={{color: 'whitesmoke', width: '50%'}}>My name is Justin Mitchell, I am a Full-Stack Software Developer specializing in front end developing.</Typography>
+    <Button onClick={handleLoading} style={{color: 'whitesmoke'}}>Continue</Button>
+    </Box>
     </div>
     </>
   )

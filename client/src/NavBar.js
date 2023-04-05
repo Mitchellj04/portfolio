@@ -4,6 +4,8 @@ import HomeIcon from '@mui/icons-material/Home';
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import { textAlign } from '@mui/system';
+import background from './Images/landingbanner.jpg'
+
 
 
 const NavBar = () => {
@@ -11,13 +13,12 @@ const NavBar = () => {
 
     const appBarStyle = {
         backgroundColor: "#515151",
-        textAlign: 'center',
-        
+        backgroundImage: `url(${background})`
     }
     return (
         <Box>
-            <AppBar style={appBarStyle}>
-                <Toolbar >
+            <AppBar style={appBarStyle} position='static'>
+                <Toolbar>
                     <IconButton
                         size="large"
                         aria-label="home button"
@@ -26,7 +27,7 @@ const NavBar = () => {
                         style={{ align: "left" }}
                         color="inherit"
                         onClick={() => navigate('/home')}><HomeIcon /></IconButton>
-                    <Typography variant='h4' component="div" style={{textAlign: 'center'}}>Justin's Portfolio</Typography>
+                    <Typography variant='h4' component="div" >Justin's Portfolio</Typography>
                     <IconButton
                         size="large"
                         aria-label="account of current user"
@@ -34,7 +35,7 @@ const NavBar = () => {
                         aria-haspopup="true"
                         style={{ align: "right" }}
                         color="inherit"
-                        onClick={() => navigate('/profile')}><Avatar src={'/profilepic.jpg'}/></IconButton>
+                        onClick={() => navigate('/profile')}><Avatar src={'/avatar.png'}/></IconButton>
                 </Toolbar>
             </AppBar>
         </Box>
