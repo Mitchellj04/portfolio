@@ -16,7 +16,7 @@ p6 = Project.create(title: "Crypo Currency Tracker", description: "Find the last
 # p1 = Project.create(title: "Movie Generator", description: "A list of the most popular movies", image: "movie.png", user_id: justin.id)
 p3 = Project.create(title: "Travel Blog", description: "A blog website about some of the adventure I have been on.", image: '/static/media/adventureblog.821ab02745a5e33bf2dc.png', url: 'https://adventure-blog.onrender.com', user_id: justin.id)
 p5 = Project.create(title: "Developer Portal", description: "A website where coders can be able to interact with one another to be able to get help or collaborate on projects", image: '/static/media/watercooler.55e17dcf79435101abb6.png', url: "https://watercooler-app.onrender.com", user_id: justin.id)
-p4 = Project.create(title: "Ski Mountain Rating", description: "Find the best east coast skiing mountain and interact with other skiers to talk about the pros and cons", image: '/static/media/skibuddy.581c4b97ad3d3286082b.png' ,user_id: justin.id)
+p4 = Project.create(title: "Ski Mountain Rating", description: "Find the best east coast skiing mountain and interact with other skiers to talk about the pros and cons", image: '/static/media/skibuddy.a615960eabf9d1581774.jpg' ,user_id: justin.id)
 p2 = Project.create(title: "Freelancer", description: "A task based website built for users to be able to keep track of their projects and tasks", image: '/static/media/freelancer.706250e318096d87c1ba.png', user_id: justin.id)
 
 

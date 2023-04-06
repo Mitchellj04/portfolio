@@ -1,7 +1,7 @@
 import { Card, CardActionArea, CardContent, CardHeader, CardMedia, Grid, Typography } from '@mui/material'
 import React, { useState } from 'react'
 import crypto from '../Images/cryptonite.png'
-import skibuddy from '../Images/skibuddy.png'
+import skibuddy from '../Images/skibuddy.jpg'
 import watercooler from '../Images/watercooler.png'
 
 const ProjectList = ({project}) => {
