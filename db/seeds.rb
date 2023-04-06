@@ -21,9 +21,8 @@ p6 = Project.create(title: "Crypo Currency Tracker", description: "Find the last
 
 
 education1 = Education.create(name: "University of Rhode Islande", degree: "Bachlors Business Administration - Entreprenuership and Innovation", start_year: 2017, graduate_year: 2021, gpa: 3.0, user_id: justin.id)
-education2 = Education.create(name: "Maquire University", degree: "2020 Abroad - Bachlors Business Administration", start_year: 2020,  gpa: 3.2, user_id: justin.id)
 education3 = Education.create(name: "Flatiron School", degree: "Bootcamp - Full-Stack Software Engineer", start_year: 2022, graduate_year: 2023, user_id: justin.id)
 
-experiences = Experience.create(company: "Deltek Products Inc.", title: "Website Admin", description: "Update the existing website with current product pricing", start_year: 2019, ending_year: 2022, user_id: justin.id)
-experiences2 = Experience.create(company: "Self Employed", title: "Freelance Website Developer", description: "", start_year: 2022,  user_id: justin.id)
+experiences = Experience.create(company: "Deltek Products Inc.", title: "Website Admin", description: "Update company's existing website with current product pricing and information. Create ads to promote website products to customers to increase likelihood of customer purchases. Maintain and improve website meta-data to optimize google search probabilty.", start_year: 2019, ending_year: 2022, user_id: justin.id)
+experiences2 = Experience.create(company: "Self Employed", title: "Freelance Website Developer", description: "Collaborate with clients to meet their needs on updating existing websites. Update and maintain product information to ensure users have current and up to date info. Add new features to increase usability for consumers. Help improve google analytics to increase customer aquisitions.", start_year: 2022,  user_id: justin.id)
 

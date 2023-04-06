@@ -46,7 +46,7 @@ const Profile = () => {
             <Box style={{ margin: 20 }}>
                 <Card style={cardStyle}>
                     <CardHeader title="About Me"></CardHeader>
-                    <CardContent></CardContent>
+                    <CardContent>I am a Full-Stack Developer passionate about creating eye catching front end websites and seemless backend architecture. My focus is on front-end developing to create interactive webpages for the end user. I have been working as a freelance developer to help my clients update and maintain their websites to increase users experiences. While also trying to improve the clients aquisitions on the business side. Look forward to hearing from you!</CardContent>
                 </Card>
                 <div>
                     <Button variant='outlined' href={resume} startIcon={<FileDownloadIcon />} style={{ marginTop: 10, color: "whitesmoke" }} >Resume</Button>
