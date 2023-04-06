@@ -2,7 +2,7 @@ import { Card, CardActionArea, CardContent, CardHeader, CardMedia, Grid, Typogra
 import React, { useState } from 'react'
 import crypto from '../Images/cryptonite.png'
 import skibuddy from '../Images/skibuddy.jpg'
-import watercooler from '../Images/watercooler.png'
+import watercooler2 from '../Images/watercooler2.jpg'
 
 const ProjectList = ({project}) => {
 
@@ -18,7 +18,7 @@ const ProjectList = ({project}) => {
         <CardActionArea href={project.url} target="_blank" rel='noopener noreferrer'>
         <Card style={cardStyle}>
           <CardHeader title={project.title} style={{textAlign: 'center'}}/>
-          <CardMedia component="img" image={project.image}/>
+          <CardMedia component="img" image={watercooler2}/>
           <CardContent>
             <Typography>{project.description}</Typography>
             <Typography></Typography>
