@@ -18,7 +18,7 @@ const ProjectList = ({project}) => {
         <CardActionArea href={project.url} target="_blank" rel='noopener noreferrer'>
         <Card style={cardStyle}>
           <CardHeader title={project.title} style={{textAlign: 'center'}}/>
-          <CardMedia component="img" image={watercooler2}/>
+          <CardMedia component="img" image={project.image}/>
           <CardContent>
             <Typography>{project.description}</Typography>
             <Typography></Typography>
