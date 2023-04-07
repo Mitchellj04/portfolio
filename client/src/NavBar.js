@@ -1,4 +1,4 @@
-import { AppBar, Avatar, Box, IconButton, Toolbar, Typography } from '@mui/material'
+import { AppBar, Avatar, Box, Container, IconButton, Toolbar, Typography } from '@mui/material'
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import HomeIcon from '@mui/icons-material/Home';
 import React from 'react'
@@ -18,25 +18,33 @@ const NavBar = () => {
     return (
         <Box>
             <AppBar style={appBarStyle} position='static'>
+                <Container>
                 <Toolbar>
-                    <IconButton
-                        size="large"
-                        aria-label="home button"
-                        aria-controls="menu-appbar"
-                        aria-haspopup="true"
-                        style={{ align: "left" }}
-                        color="inherit"
-                        onClick={() => navigate('/home')}><HomeIcon /></IconButton>
-                    <Typography variant='h4' component="div" >Justin's Portfolio</Typography>
-                    <IconButton
-                        size="large"
-                        aria-label="account of current user"
-                        aria-controls="menu-appbar"
-                        aria-haspopup="true"
-                        style={{ align: "right" }}
-                        color="inherit"
-                        onClick={() => navigate('/profile')}><Avatar src={'/avatar.png'}/></IconButton>
+                    <Box>
+                        <IconButton
+                            size="large"
+                            aria-label="home button"
+                            aria-controls="menu-appbar"
+                            aria-haspopup="true"
+                            edge="start"
+                            sx={{mr: 8}}
+                            color="inherit"
+                            onClick={() => navigate('/home')}><HomeIcon style={{fontSize: 35}}/></IconButton></Box>
+                    <Box sx={{ml: 8}}>
+                        <Typography variant='h3' component="div" >Justin's Portfolio</Typography>
+                    </Box>
+                    <Box sx={{flexGrow: 2, display: { xs: 'flex' }}}>
+                        <IconButton
+                            size="large"
+                            aria-label="account of current user"
+                            aria-controls="menu-appbar"
+                            aria-haspopup="true"
+                            style={{marginLeft: 'auto'}}
+                            color="inherit"
+                            onClick={() => navigate('/profile')}><Avatar src={'/avatar.png'} style={{fontSize: 50}}/></IconButton>
+                    </Box>
                 </Toolbar>
+                </Container>
             </AppBar>
         </Box>
     )
