@@ -71,6 +71,11 @@ code {
     color: whitesmoke;
   }
 
+  .landing-info {
+    width: 50%;
+    color: 'whitesmoke';
+    margin: 100px;
+  }
 
 
 
