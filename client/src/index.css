@@ -11,3 +11,68 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.landing-hello {
+  width: 100%;
+  margin-bottom: 20px;
+  color: whitesmoke;
+}
+
+.landing-info {
+  width: 100%;
+  color: whitesmoke;
+}
+
+.landing-button {
+  color: whitesmoke;
+  font-size: xx-large;
+}
+
+.grid-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-item {
+  width: 100%;
+  height: 100%;
+  margin: 100px;
+  padding: 10px;
+}
+
+.project-text {
+  display: none;
+}
+
+.profile-title {
+  text-align: center;
+  color: whitesmoke;
+}
+
+.profile-card {
+  background: inherit;
+  color: whitesmoke;
+  padding: 5px;
+  box-shadow: none;
+  width: 95%; 
+  margin: 10px;
+}
+
+.profile-me {
+  background-color: inherit;
+}
+
+@media only screen and (min-width: 768px) {
+  .project-text {
+    display: block;
+    color: whitesmoke;
+  }
+
+
+
+
+
+}

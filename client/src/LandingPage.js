@@ -20,9 +20,9 @@ const LandingPage = ({setLoading}) => {
     <div className='landing'>
     <Box style={{margin: 100}}> 
     <Avatar sx={{ height: '200px', width: '200px', textAlign: 'center'}} src={'/portfoliophoto.jpg'} />
-    <Typography variant='h2' style={{color: 'whitesmoke'}}>Hello!</Typography>
-    <Typography variant='h4' style={{color: 'whitesmoke', width: '50%'}}>My name is Justin Mitchell, I am a Full-Stack Software Developer specializing in front end developing.</Typography>
-    <Button onClick={handleLoading} style={{color: 'whitesmoke'}}>Continue</Button>
+    <Typography variant='h2' className='landing-hello'>Hello!</Typography>
+    <Typography variant='h4' className='landing-info' >My name is Justin Mitchell, I am a Full-Stack Software Developer specializing in front end developing.</Typography>
+    <Button onClick={handleLoading} className='landing-button'>Continue</Button>
     </Box>
     </div>
     </>

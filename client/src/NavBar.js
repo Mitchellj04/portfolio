@@ -27,10 +27,9 @@ const NavBar = () => {
                             aria-controls="menu-appbar"
                             aria-haspopup="true"
                             edge="start"
-                            sx={{mr: 8}}
                             color="inherit"
                             onClick={() => navigate('/home')}><HomeIcon style={{fontSize: 35}}/></IconButton></Box>
-                    <Box sx={{ml: 8}}>
+                    <Box>
                         <Typography variant='h3' component="div" >Justin's Portfolio</Typography>
                     </Box>
                     <Box sx={{flexGrow: 2, display: { xs: 'flex' }}}>

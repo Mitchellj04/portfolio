@@ -14,14 +14,13 @@ const ProjectList = ({project}) => {
 
   return (
 
-      <Grid item xs={5} style={{margin: 20}}>
+      <Grid item xs={12} sm={6} className='grid-item'>
         <CardActionArea href={project.url} target="_blank" rel='noopener noreferrer'>
         <Card style={cardStyle}>
           <CardHeader title={project.title} style={{textAlign: 'center'}}/>
           <CardMedia component="img" image={project.image}/>
-          <CardContent>
-            <Typography>{project.description}</Typography>
-            <Typography></Typography>
+          <CardContent className='project-text'>
+            <Typography >{project.description}</Typography>
           </CardContent>
         </Card>
         </CardActionArea>

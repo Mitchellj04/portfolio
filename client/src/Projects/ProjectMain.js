@@ -18,7 +18,7 @@ const ProjectMain = () => {
     
     const displayProjects = projects.map((project) => <ProjectList project={project} key={project.id}/>)
   return (
-        <Grid container style={{alignContent: 'center'}}>
+        <Grid container className='grid-container'>
             {displayProjects}
         </Grid>
   )
